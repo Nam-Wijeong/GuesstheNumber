@@ -16,3 +16,5 @@
 - HTML
 - CSS
 - Javascript
+## 📍웹사이트 도메인 주소
+https://randomnumber-wj.netlify.app/
