@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(248, 219, 224);
+  color: rgb(100, 28, 100);
+  font-family: "Jua", sans-serif;
+  text-align: center;
+}
+button {
+  background-color: white;
+  font-family: "Jua", sans-serif;
+  color: rgb(100, 28, 100);
+}
+button:hover {
+  background-color: rgb(247, 127, 187);
+}
+.result {
+  padding-top: 1em;
+  font-size: 25px;
+}
+.chance {
+  padding-top: 1em;
+  font-size: 20px;
+}
+.first-box {
+  padding-top: 1em;
+}
+.first-box input {
+  border-radius: 10px;
+  border: 1px solid lightpink;
+  font-size: 18px;
+  background-color: white;
+  font-family: "Jua", sans-serif;
+  height: 30px;
+}
+.first-box button {
+  border-radius: 10px;
+  border: 1px solid lightpink;
+  font-size: 18px;
+  height: 30px;
+}
+.second-box {
+  margin-top: 1em;
+  border-radius: 10px;
+  border: 1px solid lightpink;
+  font-size: 18px;
+  height: 30px;
+}
+
+@media screen and (max-width: 48rem) {
+  h1 {
+    font-size: 30px;
+  }
+  .result {
+    font-size: 20px;
+  }
+  .chance {
+    font-size: 17px;
+  }
+  img {
+    width: 300px;
+  }
+}
