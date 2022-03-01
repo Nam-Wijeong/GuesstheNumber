@@ -16,10 +16,12 @@ userInput.addEventListener("focus", function(){userInput.value = ""})
 const resetButton = document.getElementById("reset-button")
 resetButton.addEventListener("click", reset)
 const resultArea = document.getElementById("result-area")
+let resultImage = document.querySelector(".result-image")
 let chance = 5
 let gameOver = false
 const chanceArea = document.getElementById("chance-area")
 let history = []
+
 
 function pickRandomNum(){
     randomNum = Math.floor(Math.random()*100)+1
@@ -40,10 +42,13 @@ function play(){
     chance --;
     chanceArea.textContent = `남은 기회 : ${chance} 번`
     if(userValue > randomNum){
+        resultImage.src = "https://i.gifer.com/23FA.gif"
         resultArea.textContent = "Down!!"
     }else if(userValue < randomNum){
+        resultImage.src = "https://media2.giphy.com/media/iZGpuaRKdEZoI/giphy.gif"
         resultArea.textContent = "Up!!"
     }else{
+        resultImage.src = "https://c.tenor.com/HabK9twnMigAAAAC/minions-laughing.gif"
         resultArea.textContent = "정답입니다!"
         gameOver = true
     }
@@ -60,6 +65,7 @@ function play(){
 function reset(){
     userInput.value = "";
     pickRandomNum();
+    resultImage.src = "https://cdn.dribbble.com/users/720738/screenshots/3848385/hello_zidler_dribbble.gif"
     resultArea.textContent = "아래에 결과가 나옵니다!"
     gameOver = false
     playButton.disabled = false

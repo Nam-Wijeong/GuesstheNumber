@@ -14,6 +14,9 @@ button {
   background-color: white;
   font-family: "Jua", sans-serif;
   color: rgb(100, 28, 100);
+  margin-top: 1em;
+  padding: 5px;
+  width: 50px;
 }
 button:hover {
   background-color: rgb(247, 127, 187);
@@ -21,6 +24,10 @@ button:hover {
 .result {
   padding-top: 1em;
   font-size: 25px;
+}
+.result-image {
+  width: 400px;
+  height: 300px;
 }
 .chance {
   padding-top: 1em;
@@ -35,20 +42,18 @@ button:hover {
   font-size: 18px;
   background-color: white;
   font-family: "Jua", sans-serif;
-  height: 30px;
+  height: 31px;
 }
 .first-box button {
   border-radius: 10px;
   border: 1px solid lightpink;
   font-size: 18px;
-  height: 30px;
 }
 .second-box {
   margin-top: 1em;
   border-radius: 10px;
   border: 1px solid lightpink;
   font-size: 18px;
-  height: 30px;
 }
 
 @media screen and (max-width: 48rem) {

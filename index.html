@@ -18,20 +18,17 @@
     <img
       src="https://cdn.dribbble.com/users/720738/screenshots/3848385/hello_zidler_dribbble.gif"
       width="400"
+      class="result-image"
     />
-    <span class="main">
-      <div class="result" id="result-area">아래에 결과가 나옵니다!</div>
-      <div class="chance" id="chance-area">🌺남은 기회 : 5 번🌺</div>
-      <div class="first-box">
-        <input
-          type="number"
-          placeholder="숫자를 입력하세요 :)"
-          id="user-input"
-        />
+    <div class="result" id="result-area">아래에 결과가 나옵니다!</div>
+    <div class="chance" id="chance-area">🌺남은 기회 : 5 번🌺</div>
+    <div class="first-box">
+      <input type="number" placeholder="숫자를 입력하세요 :)" id="user-input" />
+      <div>
         <button id="play-button">GO!</button>
+        <button class="second-box" id="reset-button">리셋!</button>
       </div>
-      <button class="second-box" id="reset-button">리셋!</button>
-    </span>
+    </div>
     <script src="numbergame.js"></script>
   </body>
 </html>
