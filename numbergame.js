@@ -1,4 +1,3 @@
-'use strict'
 //랜덤번호 지정해준다
 //유저가 번호를 입력한다 그리고 go 라는 버튼을 누름
 //만약 유저가 랜덤 번호를 맞히면, 맞혔습니다!
@@ -22,10 +21,8 @@ let gameOver = false
 const chanceArea = document.getElementById("chance-area")
 let history = []
 
-
 function pickRandomNum(){
     randomNum = Math.floor(Math.random()*100)+1
-    console.log("정답", randomNum)
 }
 
 function play(){
@@ -73,6 +70,5 @@ function reset(){
     chanceArea.textContent = `남은 기회 : ${chance} 번`
     history = []
 }
-
 
 pickRandomNum();
